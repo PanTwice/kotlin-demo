@@ -20,7 +20,7 @@ fun iterListAndMap() {
 
     // 只读list 这个list是没有add方法的
     var numList = listOf(1, 2, 3, 4, 5, 6, 7)
-   // 遍历
+    // 遍历
     for (i in numList) {
         print(i.toString() + "\t")
     }
@@ -71,6 +71,21 @@ fun iterListAndMap() {
     for ((key, value) in map) {
         print(key + ":" + value + " ")
     }
+
+    println()
+    val array = arrayOf(1, 2, 3, 4, 5)
+    println("array[0]=${array[0]}")
+    println("array.get(0)=${array.get(0)}")
+    // 会报错下标越界
+    //array.set(5, 6)
+    // 修改数组对应下标值
+    array.set(array.size-1,array.size+1)
+    array.iterator().forEach { print(it.toString()+"\t") }
+
+    println()
+    // 创建固定大小的数组且初始化
+    var array2 = Array(5,{i -> i})
+    array2.iterator().forEach { print(it.toString()+"\t") }
 
 }
 
