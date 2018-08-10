@@ -1,5 +1,7 @@
 package com.demo.hello
 
+import org.junit.Test
+
 // 五参数 无返回值 unit可以不写
 fun method_void(): Unit {
 
@@ -23,3 +25,4 @@ fun main(args: Array<String>) {
     method_more_param("weq",1,3,4,5)
     method_more_param(1,2,3,4,string = "a")
 }
+

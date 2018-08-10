@@ -69,7 +69,7 @@ fun iterListAndMap() {
     )
     // 获取key-value的格式
     for ((key, value) in map) {
-        print(key + ":" + value + " ")
+        print("$key : $value ")
     }
 
     println()
