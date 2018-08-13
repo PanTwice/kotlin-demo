@@ -1,4 +1,4 @@
-package com.demo.hello
+package com.demo.hello.`class`
 
 /**
  *  类的创建和其他使用,比如构造,析构,成员变量,静态方法等等
@@ -146,6 +146,27 @@ class C() : A(), B {
         super<B>.f() // 调用 B.f()
     }
 }
+
+
+class varType {
+
+    var trueFlag: Boolean
+        private set(value) {
+            trueFlag = value
+        }
+        get() {
+            return trueFlag
+        }
+
+    var str: String? = "liu".trim()
+        public get() {
+            return str?.trim()
+        }
+
+
+
+}
+
 
 fun main(args: Array<String>) {
     // 可以看出省略构造函数关键字最后的效果是一样的
