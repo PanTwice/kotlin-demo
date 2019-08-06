@@ -37,15 +37,15 @@ fun main(args: Array<String>) {
     val num = Num()
 
     sum = num.sum()
-    println("第一次求和:\t"+sum)
+    println("第一次求和:\t" + sum)
 
-    num.Num(1,2)
+    num.Num(1, 2)
     sum = num.sum()
-    println("第二次求和:\t"+sum)
+    println("第二次求和:\t" + sum)
 
     num.x = 2
     sum = num.sum()
-    println("第三次求和:\t"+sum)
+    println("第三次求和:\t" + sum)
 
 }
 /**

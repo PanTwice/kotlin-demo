@@ -3,13 +3,13 @@ package com.demo.hello.inter
 // 定义接口
 interface MyInterFace {
 
-    val name:String
+    val name: String
 
     fun say()
     fun eat()
 
     // 默认函数
-    fun run(){
+    fun run() {
         println("it is run in interface myinterface")
     }
 
@@ -34,17 +34,27 @@ class Person() : MyInterFace {
 }
 
 interface A {
-    fun foo() { print("A") }
+    fun foo() {
+        print("A")
+    }
+
     fun bar()
 }
 
 interface B {
-    fun foo() { print("B") }
-    fun bar() { print("bar") }
+    fun foo() {
+        print("B")
+    }
+
+    fun bar() {
+        print("bar")
+    }
 }
 
 class C : A {
-    override fun bar() { print("bar") }
+    override fun bar() {
+        print("bar")
+    }
 }
 
 class D : A, B {

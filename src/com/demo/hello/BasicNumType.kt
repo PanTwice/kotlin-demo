@@ -68,7 +68,7 @@ fun createType() {
     // 数值变量/常量定义
     val longNum = 1_000L
     val longNum2 = 1000L
-    println("1000==1_000 相等不?:${(longNum == longNum2)}"  )
+    println("1000==1_000 相等不?:${(longNum == longNum2)}")
 
     val doubleNum = 1_000.0
     val floatNum = 1_000.0f
@@ -83,16 +83,16 @@ fun createType() {
     println("defaultDouble type is ${defaultDoubleType.javaClass}")
 
     // 本来想看看默认值,结果提示我必须初始化 要不然就是语法错误
-    val defaultByteValue:Byte?
-    val defaultIntValue:Int
-    val defaultLongValue:Long
-    val defaultShortValue:Short
-    val defaultFloatValue:Float
-    val defaultDoubleValue:Double
+    val defaultByteValue: Byte?
+    val defaultIntValue: Int
+    val defaultLongValue: Long
+    val defaultShortValue: Short
+    val defaultFloatValue: Float
+    val defaultDoubleValue: Double
     //println("defaultByteValue  is $defaultByteValue")
 
     // char 转化为int后可以发现也是对应的 但是下面的和对应数字直接比较会报语法错误 估计原因还是不是同类型的原因
-    val charA:Char = 'a'
+    val charA: Char = 'a'
     println("charA to int is ${charA.toInt()} ")
 //    if (charA == 97){
 //        ..
@@ -101,7 +101,7 @@ fun createType() {
 }
 
 // 值比较和地址比较
-fun compareValueOrAddr(){
+fun compareValueOrAddr() {
 
     val num = 10000
     // a,b 相等于创建了新的对象
@@ -125,14 +125,14 @@ fun compareValueOrAddr(){
 // 类型转换
 fun compareIntAndLong() {
 
-    val a:Int = Long.MAX_VALUE.toInt()
-    val b:Long = Long.MAX_VALUE
+    val a: Int = Long.MAX_VALUE.toInt()
+    val b: Long = Long.MAX_VALUE
     //a == b 语法错误/false,原因是类型不一致,kotlin没有隐式类型转换,需要去显式转换
     //println("int a == long b?${a==b}")
     // 注意小转大,大转小存在精度丢失的问题 大转小这里已经精度了,小转大才是正确做法
     println("a is $a, b is $b, a.toLong is ${a.toLong()}, b.toint is ${b.toInt()}")
-    println("int a == long b?${a==b.toInt()}")
-    println("int a == long b?${a.toLong()==b}")
+    println("int a == long b?${a == b.toInt()}")
+    println("int a == long b?${a.toLong() == b}")
 
     // kotlin 在算数运算是会做一定的转化,小转大
     val c = 1L + 100

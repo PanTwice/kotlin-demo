@@ -90,7 +90,7 @@ class Process {
         array2.iterator().forEach { print(it.toString() + "\t") }
 
         println()
-        for ((index,value) in array2.withIndex()) {
+        for ((index, value) in array2.withIndex()) {
             print("$index:$value \t")
         }
 
@@ -101,7 +101,7 @@ class Process {
 
         // when == swich
         when (any) {
-        // 类型判断 判断出类型后可以在直接使用转化后的类型的函数
+            // 类型判断 判断出类型后可以在直接使用转化后的类型的函数
             is Boolean -> {
                 println("it's boolean ")
             }
@@ -115,7 +115,7 @@ class Process {
                 println("it's float")
             }
             // 多个条件并列
-            is Int ,Short -> {
+            is Int, Short -> {
                 println("it's int")
             }
             is Byte -> {

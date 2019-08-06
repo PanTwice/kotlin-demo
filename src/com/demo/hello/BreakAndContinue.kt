@@ -6,9 +6,9 @@ import kotlin.test.assertEquals
 /**
  *
  *  Kotlin 有三种结构化跳转表达式：
-        return      默认从最直接包围它的函数或者匿名函数返回。
-        break       终止最直接包围它的循环。
-        continue    继续下一次最直接包围它的循环。
+return      默认从最直接包围它的函数或者匿名函数返回。
+break       终止最直接包围它的循环。
+continue    继续下一次最直接包围它的循环。
  */
 class BreakAndContinue {
 
@@ -62,7 +62,7 @@ class BreakAndContinue {
 
         println()
         // 上面写法的显式写法 相当于continue
-        listOf(1, 2, 3, 4, 5).forEach loop@ {
+        listOf(1, 2, 3, 4, 5).forEach loop@{
             if (it == 3) return@loop // 局部返回到匿名函数的调用者，即 forEach 循环
             print(it)
         }
@@ -78,7 +78,7 @@ class BreakAndContinue {
 
         println()
         // 匿名函数写法 相等于break
-        run loop@ {
+        run loop@{
 
             listOf(1, 2, 3, 4, 5).forEach(
                     fun(value: Int) {

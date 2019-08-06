@@ -1,7 +1,7 @@
 package com.demo.hello.`class`
 
 // 估计是做对象类的,应该就是java里面实体类的意思
-data class Pen(val height: Double, val width:Double) {
+data class Pen(val height: Double, val width: Double) {
 }
 
 fun main(args: Array<String>) {

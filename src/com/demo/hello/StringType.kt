@@ -9,7 +9,7 @@ package com.demo.hello
 fun main(args: Array<String>) {
 
     //原始字符串,转义无效且可以包含任意字符
-    val str= """
+    val str = """
         abc "123"
         ad\\nad
         23312
